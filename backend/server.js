@@ -17,8 +17,8 @@ const app = express();
 const allowedOrigins = [
   'http://localhost:5173',
   'http://localhost:3000',
+  'https://portfolio-mern-blush.vercel.app', // Your actual Vercel URL
   process.env.FRONTEND_URL,
-  // We'll add your Vercel URL here after deployment
 ];
 
 const corsOptions = {
