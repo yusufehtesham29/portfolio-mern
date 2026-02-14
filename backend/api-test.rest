@@ -1,0 +1,83 @@
+### ============================================
+### DELETE ALL PROJECTS (Clean Start)
+### ============================================
+GET {{baseURL}}/api/projects
+
+### Delete all projects by ID (get IDs from above, then delete one by one)
+### Or use the Node.js script below
+
+
+### ============================================
+### PROJECT 1: Superstore Sales & Profit Analysis
+### ============================================
+POST {{baseURL}}/api/projects
+Content-Type: application/json
+
+{
+  "title": "Superstore Sales & Profit Analysis",
+  "description": "Analyze 9,995 retail transactions to identify profit optimization opportunities and provide data-driven business recommendations.",
+  "technologies": ["SQL (SQLite)", "Python (Pandas, Matplotlib)", "Jupyter Notebook"],
+  "githubUrl": "https://github.com/yusufehtesham29/superstore-sales-analysis",
+  "featured": true
+}
+
+### ============================================
+### PROJECT 2: Customer Churn Prediction
+### ============================================
+POST {{baseURL}}/api/projects
+Content-Type: application/json
+
+{
+  "title": "Customer Churn Prediction Using Machine Learning",
+  "description": "Built a machine learning model to predict customer churn with 85% accuracy using classification algorithms and feature engineering.",
+  "technologies": ["Python 3.12", "Pandas", "NumPy", "Matplotlib & Seaborn", "Scikit-learn"],
+  "githubUrl": "https://github.com/yusufehtesham29/customer-churn-prediction",
+  "featured": true
+}
+
+### ============================================
+### PROJECT 3: Superstore SQL-Python Portfolio
+### ============================================
+POST {{baseURL}}/api/projects
+Content-Type: application/json
+
+{
+  "title": "Superstore SQL-Python Portfolio",
+  "description": "Professional Data Analyst Portfolio: Superstore Sales & Profit Analysis using SQL + Python",
+  "technologies": ["SQL (SQLite)", "Python (Pandas, Matplotlib)", "Jupyter Notebook"],
+  "githubUrl": "https://github.com/yusufehtesham29/superstore-sql-python-portfolio",
+  "featured": false
+}
+
+### ============================================
+### PROJECT 4: Sales Insights Analysis - Supermarket Data
+### ============================================
+POST {{baseURL}}/api/projects
+Content-Type: application/json
+
+{
+  "title": "Sales Insights Analysis - Supermarket Data",
+  "description": "This project analyzes supermarket sales data from January to March 2019 to uncover actionable business insights. Using Python and data visualization libraries, I performed comprehensive exploratory data analysis (EDA) to identify sales trends, customer behavior patterns, and profitability drivers.",
+  "technologies": ["Python 3.12", "Pandas", "Numpy", "Matplotlib & Seaborn"],
+  "githubUrl": "https://github.com/yusufehtesham29/sales-insights-python",
+  "featured": false
+}
+
+### ============================================
+### PROJECT 5: Coffee Shop Sales Dashboard
+### ============================================
+POST {{baseURL}}/api/projects
+Content-Type: application/json
+
+{
+  "title": "Coffee Shop Sales Dashboard",
+  "description": "Interactive Excel Dashboard for Coffee Shop Sales Analysis",
+  "technologies": ["Microsoft Excel", "Data Analysis", "Dashboard Design", "Business Intelligence"],
+  "githubUrl": "https://github.com/yusufehtesham29/coffee-shop-sales-dashboard",
+  "featured": false
+}
+
+### ============================================
+### VERIFY: Get All Projects (Should return 3)
+### ============================================
+GET {{baseURL}}/api/projects

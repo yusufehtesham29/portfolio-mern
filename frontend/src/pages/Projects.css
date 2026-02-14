@@ -1,0 +1,40 @@
+.projects-page {
+  padding-top: 5rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+}
+
+.loading p {
+  margin-top: 1rem;
+  color: var(--text-secondary);
+}
+
+.no-projects {
+  text-align: center;
+  padding: 3rem;
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.no-projects p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
