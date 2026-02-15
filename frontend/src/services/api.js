@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Base URL for API - change this based on environment
-const API_URL = 'https://fuzzy-space-cod-5pwrx6pxpv7347w7-5000.app.github.dev/api';
+const API_URL = 'https://portfolio-mern-xj7i.onrender.com/api';
 
 // Create axios instance with default config
 const api = axios.create({
