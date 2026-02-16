@@ -1,0 +1,84 @@
+.skills-section {
+  margin: 3rem 0;
+}
+
+.skills-section h3 {
+  font-size: 1.8rem;
+  color: #667eea;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.skill {
+  background: rgba(102, 126, 234, 0.05);
+  padding: 1.2rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  background: rgba(102, 126, 234, 0.1);
+  transform: translateY(-3px);
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.skill-name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.skill-percentage {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #667eea;
+}
+
+.skill-bar {
+  height: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-progress {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1.5s ease-out;
+  position: relative;
+  box-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+}
+
+.skill-progress.animate {
+  animation: fillBar 1.5s ease-out;
+}
+
+@keyframes fillBar {
+  from {
+    width: 0%;
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+}

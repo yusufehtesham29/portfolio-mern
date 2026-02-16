@@ -1,58 +1,45 @@
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
-import { PERSONAL_INFO } from '../utils/constants';
+import React from 'react';
+import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="footer">
-      <div className="container">
-        <div className="footer-content">
-          {/* Social Links */}
-          <div className="footer-social">
-            <a
-              href={PERSONAL_INFO.github}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-            >
-              <FaGithub />
-            </a>
-            <a
-              href={PERSONAL_INFO.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-            >
-              <FaLinkedin />
-            </a>
-            <a
-              href={PERSONAL_INFO.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-            >
-              <FaTwitter />
-            </a>
-            <a
-              href={`mailto:${PERSONAL_INFO.email}`}
-              aria-label="Email"
-            >
-              <FaEnvelope />
-            </a>
-          </div>
-
-          {/* Copyright */}
-          <p className="footer-text">
-            © {currentYear} {PERSONAL_INFO.name}. All rights reserved.
-          </p>
-
-          {/* Built With */}
-          <p className="footer-tech">
-            Built with React + Vite + Node.js + MongoDB
-          </p>
+      <div className="footer-content">
+        <div className="social-links">
+          <a 
+            href="https://github.com/yusufehtesham29" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <FaGithub />
+          </a>
+          
+          <a 
+            href="https://www.linkedin.com/in/yusuf-ehtesham-9863a6282" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin />
+          </a>
+          
+          <a 
+            href="mailto:yusufehtesham29@gmail.com"
+            aria-label="Email"
+          >
+            <FaEnvelope />
+          </a>
         </div>
+        
+        <p className="footer-text">
+          © {new Date().getFullYear()} Yusuf Ehtesham. All rights reserved.
+        </p>
+        
+        <p className="footer-tech">
+          Built with React + Vite + Node.js + MongoDB
+        </p>
       </div>
     </footer>
   );
